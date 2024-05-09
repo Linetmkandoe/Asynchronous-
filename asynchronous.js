@@ -35,15 +35,20 @@ async function performTask(){
     })
 }
 
+function unstableTask(taskName, failureProbability) {
+   
+    const randomNumber = Math.random();
+    if (randomNumber > failureProbability) {
+        return Promise.resolve(`Task ${taskName} succeeded`);
+    }
+    else {
+        return Promise.reject(`Task ${taskName} failed.`);
+    }
+}
 
 
+function executeWithRetry(taskName, retries, failureProbability) {
+    let attempts = 0;
+    let success = false;
 
-
-
-
-
-
-
-
-
-
+}
