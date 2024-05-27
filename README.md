@@ -1,0 +1,2 @@
+Asynchronuos programming is a technique that enables your program to start a potentially long-running task and still be able to be responsive to other events while that tasks run, rather than having to wait until that task has finished.
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action
